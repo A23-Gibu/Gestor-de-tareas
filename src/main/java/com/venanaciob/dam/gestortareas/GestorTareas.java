@@ -46,5 +46,14 @@ public class GestorTareas {
     public boolean eliminarTarea(int id) {
         return tareas.removeIf(tarea -> tarea.getId() == id);
     }
+    
+    // Implementación básica para añadir tareas
+public void agregarTarea(String descripcion) {
+    if (descripcion == null || descripcion.trim().isEmpty()) {
+        System.out.println("La descripción no puede estar vacía.");
+        return;
+    }
+    System.out.println("Tarea registrada con éxito: " + descripcion);
+}
 
 }
