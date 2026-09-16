@@ -11,7 +11,7 @@ public class App {
 	private static final GestorTareas gestor = new GestorTareas();
 	
     public static void main(String[] args) {
-
+	System.out.println("=== GESTOR DE TAREAS ===");
         int opcion;
         do {
             mostrarMenu();
